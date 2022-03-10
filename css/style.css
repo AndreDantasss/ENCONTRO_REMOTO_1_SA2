@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: dimgray;
+    height: 80px;
+}
+
+.container-grid{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.menu{
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner{
+    height: 300px;
+    background-image: url(../img/BANNER.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.semana-container{
+    background-color: dimgray;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex; 
+    justify-content: center;
+}
+
+.semana a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    align-items: center
+}
+
+.semana{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secao-jogos{
+    background-color:silver;
+}
+
+.jogos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jogos img{
+    width: 200px;
+    height: 300px;
+}
+
+.atualizacoes-container{
+    background-color: dimgray;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex; 
+    justify-content: center;
+}
+
+.atualizacoes a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    align-items: center
+}
+
+.atualizacoes{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.seçao-sobre {
+    background-color: silver;
+}
+
+.texto-sobre{
+    color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container img{
+    width: 100%;
+    height: 100%;
+}
+
+.barras {
+    width: 50px;
+    display: none;
+}
+
+.posicionamento-header{
+position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+    .container-grid{
+    width: 90%;
+    }
+}
+
+.menu a {
+    font-size: 16px;
+}
+
+.logo { 
+    width: 200px;
+}
+
+footer{
+    background-color: dimgray;
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    padding:16px;
+}
+
+.links{
+    color: black;
+
+}
+
+.links a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.links-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.logo-rodape{
+    width: 120px;
+}
+
+.redes-sociais h2{
+    color: black;
+    font-size: 20px;
+    margin-bottom: 8px;
+
+}
+
+.redes-sociais{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .barras{
+        display: inline-block;
+    }
+
+    .menu{
+        display: none;
+        flex-direction: column;
+        width: 250px;
+        position: absolute;
+        top: 0;
+        right: 60px;
+        background-color: silver;
+    }
+    menu a{
+        text-align: center;
+        padding: 15px;
+    }
+}
